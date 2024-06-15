@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header text-center">
+      <div class="flex justify-center">
+        <img class="logo" src="netflix img.png" alt="" />
+      </div>
+
+      <h2 class="text-neutral-300 text-3xl font-bold">
+        Search Unlimited movies, TV shows and more
+      </h2>
+      <p class="text-neutral-400 text-lg">
+        Ready to watch? Enter your movie name to check if its a good choice
+      </p>
+      <div class="flex inputbtn mt-3">
+        <input
+          class="px-4 py-3 text-white"
+          type="text"
+          id="movieName"
+          placeholder="Search a Movie..."
+        />
+        <button class="btn" onclick="search()">Search Movie</button>
+      </div>
+    </div>
+
+    <div id="container" class="w-[700px] w-full mx-auto mt-16">
+      <div class="flex flex1 gap-10 text-neutral-200">
+        <div>
+          <h1 id="title" class="text-2xl font-bold">The Avengers</h1>
+          <p class="my-1">
+            Genre : <span class="text-neutral-200" id="genre">Yash</span>
+          </p>
+          <p id="desc" class="text-md text-neutral-300">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+            voluptatibus recusandae, possimus provident inventore pariatur sint.
+          </p>
+          <p class="my-1">
+            Actors : <span class="text-neutral-200" id="actors">Yash</span>
+          </p>
+          <p class="my-1">
+            Directors :
+            <span class="text-neutral-200" id="directors">Yash</span>
+          </p>
+
+          <p class="my-1">
+            Awards : <span class="text-neutral-200" id="awards">Yash</span>
+          </p>
+          <p class="my-1">
+            Box Office Collection :
+            <span class="text-neutral-200" id="collection">Yash</span>
+          </p>
+          <p class="my-1">
+            Languages : <span class="text-neutral-200" id="ln">Yash</span>
+          </p>
+          <p class="my-1">
+            IMDB Ratings :
+            <span class="text-neutral-200" id="ratings">Yash</span>
+          </p>
+        </div>
+        <div class="banner">
+          <img
+            id="poster"
+            class="rounded-xl w-[full]"
+            src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+            alt=""
+
+          />
+          <div class="suggestion">Worth Watching</div>
+        </div>
+      </div>
+    </div>
+    <h1
+      class="text-3xl font-bold text-center my-36 text-neutral-100"
+      id="error"
+    ></h1>
+
+    <script src="app.js"></script>
+  </body>
+</html>
